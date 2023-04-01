@@ -23,13 +23,13 @@
 
 int core( )
 {
-	bool integrity_status = integrity::check( );
+	/*bool integrity_status = integrity::check( );
 
 	if constexpr ( !settings::values::using_auth )
 		integrity_status = true;
 
 	if ( integrity_status )
-	{
+	{*/
 		/*while ( !GetAsyncKeyState( VK_F2 ) )
 			std::this_thread::sleep_for( std::chrono::milliseconds( 1 ) );*/
 
@@ -46,11 +46,11 @@ int core( )
 
 		std::thread( []( )
 			{ renderer::start( xs( "DagorWClass" ) ); } ).detach( );
-	}
+	/*}
 	else
 	{
 		_Exit( 0 );
-	}
+	}*/
 
 	return 0;
 }
